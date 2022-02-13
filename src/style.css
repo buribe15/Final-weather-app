@@ -21,6 +21,7 @@ li {
   color: rgb(50, 177, 228);
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 .weather-app {
   border: 1px solid purple;
