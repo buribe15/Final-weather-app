@@ -21,6 +21,8 @@ li {
   color: rgb(50, 177, 228);
   margin: 0;
   padding: 0;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 .weather-app {
