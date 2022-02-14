@@ -29,11 +29,7 @@
                 />
               </div>
               <div class="col-2">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-outline-success"
-                />
+                <input type="submit" value="Search" class="btn btn-warning" />
               </div>
             </div>
           </form>
@@ -50,12 +46,15 @@
                 <img src="" alt="Sunny" id="icon" class="float-left" />
                 <span class="float-left">
                   <strong id="temperature">15</strong>
-                  <span class="unit">°C | <a href="#"> °F</a> </span>
+                  <span class="unit"
+                    ><a href="#" id="metric" class="active">°C</a> |
+                    <a href="#" id="imperial" class="active"> °F</a>
+                  </span>
                 </span>
               </div>
             </div>
             <div class="col-6">
-              <ul>
+              <ul class="extras">
                 <li>Wind: <span id="wind"></span> km/h</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
               </ul>

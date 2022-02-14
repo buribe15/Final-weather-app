@@ -2,8 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  color: rgb(153, 124, 124);
-  font-size: 24px;
+  color: #064b5e;
+
+  font-size: 28px;
   font-weight: normal;
   line-height: 30px;
   text-decoration: underline;
@@ -19,10 +20,11 @@ li {
   font-size: 18px;
   font-weight: 300;
   line-height: 25px;
-  color: rgb(50, 177, 228);
+
   margin: 0;
   padding: 0;
 }
+
 li::first-letter {
   text-transform: capitalize;
 }
@@ -30,6 +32,14 @@ li::first-letter {
   border: 1px solid purple;
   border-radius: 10px;
   padding: 25px;
+  background: linear-gradient(
+    67.7deg,
+    rgb(252, 185, 125) -0.9%,
+    rgb(245, 231, 106) 22.8%,
+    rgb(160, 236, 208) 50.3%,
+    rgb(57, 178, 209) 75.5%,
+    rgb(183, 174, 193) 100.2%
+  );
 }
 .wrapper {
   max-width: 650px;
@@ -37,6 +47,7 @@ li::first-letter {
 }
 .overview {
   margin-bottom: 20px;
+  color: #318da7;
 }
 .weather-icon img {
   margin-right: 12px;
@@ -53,4 +64,18 @@ li::first-letter {
   font-size: 15px;
   position: relative;
   bottom: 20px;
+}
+#metric {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+#imperial {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.extras {
+  position: relative;
+  top: 25px;
 }
