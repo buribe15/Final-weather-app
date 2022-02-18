@@ -24,7 +24,6 @@ function currentDate(timestamp) {
 }
 
 function displayTemp(response) {
-  console.log(response.data);
   let tempElm = document.querySelector("#temperature");
   let cityElm = document.querySelector("#city");
   let descripElm = document.querySelector("#description");
