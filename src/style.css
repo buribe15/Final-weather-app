@@ -101,3 +101,9 @@ li::first-letter {
 .forecast-temp {
   font-size: 15px;
 }
+.forecast-celsius {
+  margin-top: 40px;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
