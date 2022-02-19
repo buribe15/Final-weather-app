@@ -23,6 +23,26 @@ function currentDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElm = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+  
+       <div class="col-2">
+         <div class="forecast-date">${day}</div>
+          <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+            <span class="forecast-temp"> 20° | 5° </span>
+         </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElm.innerHTML = forecastHTML;
+}
+
 function displayTemp(response) {
   let tempElm = document.querySelector("#temperature");
   let cityElm = document.querySelector("#city");
@@ -87,3 +107,4 @@ metricLink.addEventListener("click", displayMetric);
 let metricTemp = null;
 
 search("Seattle");
+displayForecast();
